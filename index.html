@@ -7,8 +7,6 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 <meta name="apple-mobile-web-app-title" content="SAAB 340B Cruise Data"/>
 <meta name="theme-color" content="#0f1117"/>
-<link rel="manifest" href="manifest.webmanifest"/>
-<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <title>SAAB 340B Cruise Data</title>
 <style>
 :root{
@@ -762,11 +760,6 @@ function renderLR(lr, mc, altFt, sat) {
 
 // Allow Enter key to calculate
 document.addEventListener('keydown', e => { if (e.key === 'Enter') calculate(); });
-</script>
-<script>
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js'));
-}
 </script>
 </body>
 </html>
