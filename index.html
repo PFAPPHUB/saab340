@@ -9,6 +9,8 @@
 <meta name="apple-mobile-web-app-title" content="SAAB 340 Cruise Data"/>
 <meta name="theme-color" content="#0f1117"/>
 <meta name="app-version" content="2.0"/>
+<link rel="manifest" href="manifest.webmanifest"/>
+<link rel="apple-touch-icon" href="apple-touch-icon.png"/>
 <title>SAAB 340 Cruise Data</title>
 <style>
 :root{
@@ -882,6 +884,12 @@ document.addEventListener('keydown', e => { if (e.key === 'Enter') calculate(); 
   document.getElementById('var-wt-btn').classList.toggle('active', v === 'wt');
   applyVariant();
 })();
+</script>
+<script>
+// Offline support — stores the app on the device (only when served from the web, e.g. GitHub Pages)
+if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./sw.js').catch(() => {}));
+}
 </script>
 </body>
 </html>

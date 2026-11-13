@@ -1,7 +1,7 @@
 {
-  "name": "SAAB 340B Cruise Data",
-  "short_name": "340B Cruise",
-  "description": "SAAB 340B cruise performance lookup - Max Cruise, Long Range Cruise, MCP",
+  "name": "SAAB 340 Cruise Data",
+  "short_name": "340 Cruise",
+  "description": "SAAB 340 and SAAB 340WT cruise performance lookup - Max Cruise, Long Range Cruise, MCP",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
